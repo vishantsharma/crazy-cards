@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import * as yup from "yup";
+import { useDispatch } from 'react-redux';
 import Input from '../components/ui/Input';
 import Card from '../components/ui/Card';
 import DateOfBirth from '../components/ui/DOB';
 import Select from '../components/ui/SelectField';
-
+import { storeData } from '../redux/actions';
 import './CaptureForm.css';
 
 const CaptureForm = React.memo(props => {
@@ -21,7 +22,7 @@ const CaptureForm = React.memo(props => {
     employment: "",
     postCode: "",
     houseNumber: "",
-    income: "",
+    income: ""
   };
 
   const optionsForTitle = [
@@ -61,12 +62,16 @@ const CaptureForm = React.memo(props => {
 
   const [enteredData, setEnteredData] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const dispatch = useDispatch();
 
   const submitHandler = (event) => {
     event.preventDefault();
     schema
       .validate(enteredData, { abortEarly: false })
-      .then(() => props.history.push('/show-cards'))
+      .then(() => {
+        dispatch(storeData(enteredData))
+        props.history.push('/show-cards')
+      })
       .catch((error) => {
         const errors = {};
         error.errors.map((err) => {
