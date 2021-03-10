@@ -13,8 +13,13 @@ const SelectField = ({
   className
 }) => {
   return (
-    <div>
+    <>
       <label htmlFor={name}>{label}</label>
+      {error ? (
+      <div role="alert" className="caution">
+        <span>{error}</span>
+      </div>
+    ) : null}
       <select
         name={name}
         id={name}
@@ -31,12 +36,7 @@ const SelectField = ({
           </option>
         ))}
       </select>
-      {error ? (
-        <div role="alert" className="text-danger">
-          {error}
-        </div>
-      ) : null}
-    </div>
+      </>
   );
 };
 

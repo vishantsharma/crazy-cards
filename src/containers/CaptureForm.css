@@ -74,6 +74,10 @@
     margin-left: 45%;
   }
 
+  .dob-error {
+    margin-top: 25px !important;
+  }
+
   @media (max-width: 499px) {
     .toolbar h1 {
       margin-left: 28%;

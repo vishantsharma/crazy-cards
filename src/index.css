@@ -30,3 +30,43 @@ button:active {
 button:focus {
   outline: none;
 }
+
+.caution {
+	display: block;
+  position: relative;
+  width: 0; 
+	height: 0; 
+  border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 22px solid white;
+}
+.caution:before {
+	position: absolute;
+  content: "!";
+  z-index: 2;
+  top: 6px;
+  left: -2px;
+  margin-top: -5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  
+}
+.caution:after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 0; 
+	height: 0; 
+  left: -11px;
+  top: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 18px solid red;
+}
+
+.caution span {
+  padding-left: 20px;
+  white-space: nowrap;
+  color: red;
+}
