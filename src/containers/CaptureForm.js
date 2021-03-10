@@ -66,7 +66,7 @@ const CaptureForm = React.memo(props => {
     event.preventDefault();
     schema
       .validate(enteredData, { abortEarly: false })
-      .then(() => props.getCards(enteredData))
+      .then(() => props.history.push('/show-cards'))
       .catch((error) => {
         const errors = {};
         error.errors.map((err) => {
@@ -104,7 +104,7 @@ const CaptureForm = React.memo(props => {
       <header className="toolbar"><h1>Crazy Cards</h1></header>
       <section className="capture-form">
         <Card>
-          <form onSubmit={submitHandler}>
+          <form onSubmit={submitHandler} method="post" action="/formData">
             <div className="form-control">
               <Select
                 name="title"
