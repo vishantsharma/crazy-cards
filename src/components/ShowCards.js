@@ -22,7 +22,7 @@ const ShowCards = () => {
             ...selectedCreditCards
         }
         setSelectedCreditCards(obj1);
-
+        
         if (selectedCreditCards.hasOwnProperty(cardData.card_type)) {
             delete obj1[cardData.card_type]
             setSelectedCreditCards({ ...obj1 });
@@ -45,15 +45,12 @@ const ShowCards = () => {
             if ((userDataState.employment === 'student' && cardData.optionsForEmployment === "student")) {
                 cardType.push(cardData)
             }
-
             if ((userDataState.income > 16000 && cardData.income > 16000) && !(cardData.optionsForEmployment === "student")) {
                 cardType.push(cardData)
             }
-
             if (cardData.card_type === "anywhere_card") {
                 cardType.push(cardData)
             }
-
         })
         // eslint-disable-next-line
         return [... new Set(cardType)];
@@ -63,7 +60,7 @@ const ShowCards = () => {
         <>
             <section className="capture-form">
                 <Card>
-                    <h3> Total Credit £{sum(selectedCreditCards)}</h3>
+                    <h2>{`Total Available Credit: £${sum(selectedCreditCards)}`}</h2>
                     {getFilteredData(data).map(resData => (
                         <GenerateCards
                             key={resData.card_type}

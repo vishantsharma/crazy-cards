@@ -5,69 +5,30 @@
             "card_name": "Liquid Card",
             "income": 21000,
             "optionsForEmployment": "employed",
-            "available_credit": 10,
-            "card_details": {
-                "key_facts": [
-                    {
-                        "label": "APR",
-                        "value": "18%"
-                    },
-                    {
-                        "label": "Balance Transfer Offer",
-                        "value": "26 month"
-                    },
-                    {
-                        "label": "Purchase Offer",
-                        "value": "26 month"
-                    }
-                ]
-            }
+            "available_credit": 3000,
+            "apr": 33.9,
+            "balance_transfer_offer": 12,
+            "purchase_offer": 6
         },
         {
             "card_type": "anywhere_card",
             "card_name": "Anywhere Card",
             "income": 19000,
             "optionsForEmployment": "employed",
-            "available_credit": 20,
-            "card_details": {
-                "key_facts": [
-                    {
-                        "label": "APR",
-                        "value": "18%"
-                    },
-                    {
-                        "label": "Balance Transfer Offer",
-                        "value": "26 month"
-                    },
-                    {
-                        "label": "Purchase Offer",
-                        "value": "26 month"
-                    }
-                ]
-            }
+            "available_credit": 300,
+            "apr": 33.9,
+            "balance_transfer_offer": 0,
+            "purchase_offer": 0
         },
         {
             "card_type": "student_card",
             "card_name": "Student Card",
             "income": 17000,
             "optionsForEmployment": "student",
-            "available_credit": 30,
-            "card_details": {
-                "key_facts": [
-                    {
-                        "label": "APR",
-                        "value": "18%"
-                    },
-                    {
-                        "label": "Balance Transfer Offer",
-                        "value": "26 month"
-                    },
-                    {
-                        "label": "Purchase Offer",
-                        "value": "26 month"
-                    }
-                ]
-            }
+            "available_credit": 1200,
+            "apr": 18.9,
+            "balance_transfer_offer": 0,
+            "purchase_offer": 6
         }
     ]
 }
