@@ -147,7 +147,7 @@ const CaptureForm = React.memo(props => {
                 data={enteredData}
                 handleChange={dobHandler}
                 type="number"
-                className={errors ? "dob-error" : ""}
+                className={errors ? "dob-main" : ""}
                 errors={errors}
               />
             </div>

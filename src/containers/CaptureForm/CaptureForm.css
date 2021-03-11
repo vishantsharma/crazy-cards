@@ -54,6 +54,24 @@
     margin: 10px 0 20px;
   }
 
-  .dob-error {
+  .dob-main {
     margin-top: 25px !important;
   }
+
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    .dob-main {
+      width: 79px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  .dob-main {
+    width: 68px !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .dob-main {
+    width: 57px !important;
+  }
+}
