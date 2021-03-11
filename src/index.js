@@ -6,12 +6,14 @@ import { Provider } from 'react-redux';
 import rootReducer from '../src/redux/rootReducer';
 import './index.css';
 import App from './App';
+import Header from '../src/components/ui/Header';
 import reportWebVitals from './reportWebVitals';
 
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header header="Crazy Cards" />
     <Router>
       <Provider store={store}>
       <App />

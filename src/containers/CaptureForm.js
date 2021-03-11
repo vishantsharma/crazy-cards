@@ -106,7 +106,6 @@ const CaptureForm = React.memo(props => {
 
   return (
     <>
-      <header className="toolbar"><h1>Crazy Cards</h1></header>
       <section className="capture-form">
         <Card>
           <form onSubmit={submitHandler} method="post" action="/formData">

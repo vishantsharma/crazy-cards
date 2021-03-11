@@ -54,32 +54,6 @@
     margin: 10px 0 20px;
   }
 
-  .toolbar {
-    height: 56px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color:#062b66;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 90;
-    color: white;
-  }
-  
-  .toolbar h1 {
-    margin-left: 45%;
-  }
-
   .dob-error {
     margin-top: 25px !important;
   }
-
-  @media (max-width: 499px) {
-    .toolbar h1 {
-      margin-left: 28%;
-    }
-}
