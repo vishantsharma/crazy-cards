@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `node server.js`
 
-Prerequisities - Requires Express JS verion above v4.x & Node JS verions above v10.x
+Prerequisities - Requires Express JS version above v4.x & Node JS version above v10.x
 
 Runs the server at the default port.
 Open [http://localhost:3000/data](http://localhost:3000/data) to view API response in the browser.
