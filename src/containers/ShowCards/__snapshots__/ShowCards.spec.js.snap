@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowCards should render 1`] = `
+<section
+  className="capture-form"
+>
+  <div
+    className="card"
+  >
+    <h2>
+      Total Available Credit: £0
+    </h2>
+  </div>
+</section>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenerateCards should render 1`] = `
+<div
+  className="card"
+>
+  <h2
+    className="heading"
+  />
+  <p>
+    Apr:
+     
+    <span>
+      <strong>
+        undefined%
+      </strong>
+    </span>
+  </p>
+  <p>
+    Balance Transfer Offer Duration:
+     
+    <span>
+      <strong>
+        undefined months
+      </strong>
+    </span>
+  </p>
+  <p>
+    Purchase Offer Duration:
+      
+    <span>
+      <strong>
+        undefined months
+      </strong>
+    </span>
+  </p>
+  <p>
+    Credit Available:
+     
+    <span>
+      <strong>
+        £undefined
+      </strong>
+    </span>
+  </p>
+  <input
+    checked=""
+    id="card-undefined"
+    name="card-undefined"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="card-undefined"
+  >
+     Select this Card
+  </label>
+</div>
+`;

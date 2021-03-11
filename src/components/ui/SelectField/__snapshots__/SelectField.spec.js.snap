@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectField should render 1`] = `
+Array [
+  <label
+    htmlFor=""
+  >
+    
+  </label>,
+  <select
+    className=""
+    id=""
+    name=""
+    onChange={[MockFunction]}
+    value=""
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      
+    </option>
+  </select>,
+]
+`;

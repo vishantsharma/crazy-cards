@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOB should render 1`] = `
+Array [
+  <label
+    htmlFor="day"
+  />,
+  <input
+    className=""
+    id="day"
+    name="day"
+    onChange={[MockFunction]}
+    placeholder="DD"
+    type=""
+    value=""
+  />,
+  <label
+    htmlFor="month"
+  />,
+  <input
+    className=""
+    id="month"
+    name="month"
+    onChange={[MockFunction]}
+    placeholder="MM"
+    type=""
+    value=""
+  />,
+  <label
+    htmlFor="year"
+  />,
+  <input
+    className=""
+    id="year"
+    name="year"
+    onChange={[MockFunction]}
+    placeholder="YYYY"
+    type=""
+    value=""
+  />,
+]
+`;
