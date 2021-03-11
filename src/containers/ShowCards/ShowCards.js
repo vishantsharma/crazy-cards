@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import GenerateCards from '../containers/GenerateCards';
-import Card from './ui/Card';
+import GenerateCards from '../../components/GenerateCards/GenerateCards';
+import Card from '../../components/ui/Card/Card';
 
 const ShowCards = () => {
     const [data, setData] = useState([]);

@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from './Input';
+import Input from '../Input/Input';
 
 const DateOfBirth = ({data, type, handleChange, errors, className}) => {
     return (

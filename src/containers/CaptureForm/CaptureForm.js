@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import * as yup from "yup";
 import { useDispatch } from 'react-redux';
-import Input from '../components/ui/Input';
-import Card from '../components/ui/Card';
-import DateOfBirth from '../components/ui/DOB';
-import Select from '../components/ui/SelectField';
-import { storeData } from '../redux/actions';
+import Input from '../../components/ui/Input/Input';
+import Card from '../../components/ui/Card/Card';
+import DateOfBirth from '../../components/ui/DateOfBirth/DOB';
+import Select from '../../components/ui/SelectField/SelectField';
+import { storeData } from '../../redux/actions';
 import './CaptureForm.css';
 
 const CaptureForm = React.memo(props => {

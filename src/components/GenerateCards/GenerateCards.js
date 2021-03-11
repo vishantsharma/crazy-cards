@@ -1,6 +1,6 @@
 import React from "react";
-import CheckBox from "../components/ui/CheckBox";
-import Card from '../components/ui/Card';
+import CheckBox from "../ui/CheckBox/CheckBox";
+import Card from '../ui/Card/Card';
 import './GenerateCards.css';
 
 const GenerateCards = ({ data, selected, handleClick }) => {
