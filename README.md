@@ -8,10 +8,12 @@ In the project directory, you can run:
 
 ### `node server.js`
 
+Prerequisities - Requires Express JS verion above v4.x & Node JS verions above v10.x
+
 Runs the server at the default port.
 Open [http://localhost:3000/data](http://localhost:3000/data) to view API response in the browser.
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the browser.
 When prompted to change the port, click on Enter or type y/yes in the terminal.
@@ -19,7 +21,7 @@ Open http://localhost:3001/#/ to view the app in the browser.
 
 The page will reload if you make edits. 
 
-### `npm start`
+### `yarn test a`
 
 Launches the test runner in the interactive watch mode.
 

@@ -1,8 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import TestRenderer from 'react-test-renderer';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('react-redux', () => {
+    const ActualReactRedux = jest.requireActual('react-redux');
+    return {
+        ...ActualReactRedux,
+        useDispatch: jest.fn().mockImplementation(() => {
+            return '';
+        }),
+    };
 });
+
+describe('App', () => {
+    it('should render', () => {
+        const component = TestRenderer.create(<App />)
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+    })
+})
