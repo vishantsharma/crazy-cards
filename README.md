@@ -9,13 +9,13 @@ In the project directory, you can run:
 ### `node server.js`
 
 Runs the server at the default port.
-Open [http://localhost:3000/data](http://localhost:3000/data) to view it in the browser.
+Open [http://localhost:3000/data](http://localhost:3000/data) to view API response in the browser.
 
 ### `npm start`
 
 Runs the app in the browser.
-Prompt to change the port, click on Enter or type y/yes in the terminal.
-Open http://localhost:3001/#/ to view it in the browser.
+When prompted to change the port, click on Enter or type y/yes in the terminal.
+Open http://localhost:3001/#/ to view the app in the browser.
 
 The page will reload if you make edits. 
 
@@ -29,9 +29,10 @@ Launches the test runner in the interactive watch mode.
 2. Redux Hooks
 3. React Router
 4. Server configuration
-5. Re-usable components
-6. Responsive web design
-7. Jest Snapshot testing
+5. ES6
+6. Re-usable components
+7. Responsive web design
+8. Jest Snapshot testing
 
 # Areas for improvement
 
