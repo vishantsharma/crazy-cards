@@ -35,10 +35,3 @@ Launches the test runner in the interactive watch mode.
 6. Re-usable components
 7. Responsive web design
 8. Jest Snapshot testing
-
-# Areas for improvement
-
-1. Unit testing
-2. Validation of inputs (currently validation is limited) including checking exact Post code, removal of validation error message 
-on key press and then validate again on blur, type checking and proper error messages.
-3. Add dummy images for the cards displayed on the http://localhost:3001/#/show-cards page.
